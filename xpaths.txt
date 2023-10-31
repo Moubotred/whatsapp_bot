@@ -1,0 +1,16 @@
+  # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[9]/div/div    /div/div[2]/div[1]                               || xpath padre
+
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[9]/div/div   /div/div[2]/div[1]/div[2]/div[1]/span/img         || xpath stiker
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[8]/div/div   /div[1]/div[2]/div[1]                             || xpath img y texto
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[6]/div/div   /div/div[1]/div[1]/div[1]/div[2]/div              || mensaje eliminado
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[5]/div/div   /div[1]/div[2]/div[1]                             || xpath img
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[3]/div/div   /div[1]/div[2]/div[1]                             || xpath audio
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[6]/div/div   /div[1]/div[1]/div[1]/div                         || xpath texto despues de img
+    # //*[@id="main"]/div[2]/div/div[2]/div[3]/div[6]/div/div   /div[1]/div[2]/div[1]/div/div[2]/div/span[1]/span || xpath solo texto
+    # //*[@id="main"]/div[2]/div/div[2]/div[2]/div[9]/div/div   /div[1]/div[2]/div[1]/div/div[2]/div/div/span/img || xpath emogi
+
+    # /html/body/div[1]/div/div/div[5]/div/div[2]/div/div[2]/div[3]/div || numero de divs
+    # /html/body/div[1]/div/div/div[5]/div/div[2]/div/div[2]/div[3]/div [19]/div/div/div[1]/div[2]/div[1]/div/div[1]/span || nombre
+    # /html/body/div[1]/div/div/div[5]/div/div[2]/div/div[2]/div[3]/div [22]/div/div/div[1]/div[1]/span[1]
+
+    # /html/body/div[1]/div/div/div[5]/div/div[2]/div/div[2]/div[3]/div [23]/div/div/div[1]/div[1]/div[1]/div/div[1]/div/span[1]/span || texto
