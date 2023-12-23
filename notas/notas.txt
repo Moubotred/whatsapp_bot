@@ -1,0 +1,93 @@
+
+#wait = WebDriverWait(whatsapp.driver,50)
+#whatsapp.click(By.XPATH,'')
+#iniciar = wait.until(EC.presence_of_element_located((By.XPATH,'//div[@class="to2l77zo gfz4du6o ag5g9lrv bze30y65 kao4egtt qh0vvdkp"]')))
+
+
+# try:
+    # Definir un selector XPath para los mensajes entrantes
+time.sleep(8)
+# xpath_mensajes_entrantes = '//span[@class="_11JPr selectable-text copyable-text"]/span'#/text()
+# iniciar = whatsapp.driver.find_element(By.XPATH,xpath_mensajes_entrantes)
+# print(iniciar.text)
+
+
+
+
+#//*[@id="main"]/div[2]/div/div[2]/div[3]/div[83]
+
+# html = etree.tostring(elements, pretty_print=True, encoding="unicode")
+# with open('index.html','w') as f:
+#     f.write(html)
+    
+
+#     while True:
+#         # Esperar hasta que aparezca un nuevo mensaje entrante
+#         WebDriverWait(whatsapp.driver, 10).until(EC.presence_of_element_located((By.XPATH, xpath_mensajes_entrantes)))
+
+#         # Obtener el elemento del mensaje entrante y su contenido
+#         mensaje_element = whatsapp.driver.find_element(By.XPATH, xpath_mensajes_entrantes)
+#         mensaje = mensaje_element.text
+
+#         # Hacer algo con el mensaje, como imprimirlo
+#         print("Mensaje entrante:", mensaje)
+
+#         if mensaje == "/menu":
+#             print('menu en proceso')
+
+
+# except KeyboardInterrupt:  # Pausar el bucle con Ctrl+C
+#     pass
+
+# finally:
+#     # Cerrar el navegador al finalizar
+#     whatsapp.driver.quit()
+
+# iniciar.click()
+#buscar bu
+
+scar este elemento en seleniun '//div[@class="_1biMM _3sHED"]'
+
+# whatsapp.click(By.XPATH,'//*[@id="pane-side"]/div[2]/div/div/div[5]/div/div/div/div[2]')
+# time.sleep(20)
+
+# page_html = whatsapp.driver.page_source
+# root = etree.HTML(page_html)
+# elements = root.xpath('//div[@class="lhggkp7q ln8gz9je rx9719la"]//span/@title')
+
+# lista_chat = root.xpath('//div[@class="lhggkp7q ln8gz9je rx9719la"]')
+
+# prefijo = []
+# for element in elements:
+#     prefijo.append(element)
+
+# num = int(len(prefijo))
+# for i in range(0,num, 2):  
+#     if elements[i] == "Nelson Contreras H. 😇":#Operraros 😈🤙🏻⚡
+#         print(elements[i])
+#         num = str(int(i)-1)
+#         #whatsapp.click(By.XPATH,'//*[@id="pane-side"]/div[2]/div/div/div[4]/div/div/div/div[2]')
+#         whatsapp.click(By.XPATH,f'//*[@id="pane-side"]/div[2]/div/div/div[{num}]/div/div/div/div[2]') #posicion3 ubica el grupo
+#         time.sleep(20)
+
+whatsapp.driver.quit()
+#iterrar todas los span hasta encontra el nombre del grupo o persona 
+#etiqueta de la barra vertical donde has varias que se diviand en span 
+#donde esta el nombre
+
+
+
+
+# elements = root.xpath('//div[@class="cm280p3y to2l77zo n1yiu2zv ft2m32mm oq31bsqd e1yunedv"]')
+# print(elements)
+
+elements = root.xpath('//*[@id="main"]/div[2]/div/div[2]/div[3]/div[83]/')
+#html = etree.tostring(elements, pretty_print=True, encoding="unicode")
+print(elements)
+
+
+
+
+
+
+

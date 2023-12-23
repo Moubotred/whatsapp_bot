@@ -1,0 +1,7 @@
+selenium
+colorama
+bs4
+lxml
+pyserial
+pandas
+requests

@@ -1,0 +1,91 @@
+buscar core como esta contruido
+
+
+def _web(receiver: str, message: str) -> None:
+    """Opens WhatsApp Web based on the Receiver"""
+    if check_number(number=receiver):
+        open(
+            "https://web.whatsapp.com/send?phone="
+            + receiver
+            + "&text="
+            + quote(message)
+        )
+    else:
+        open("https://web.whatsapp.com/accept?code=" + receiver)
+
+
+def send_message(message: str, receiver: str, wait_time: int) -> None:
+    """Parses and Sends the Message"""
+
+    _web(receiver=receiver, message=message)
+    time.sleep(7)
+    click(WIDTH / 2, HEIGHT / 2 + 15)
+    time.sleep(wait_time - 7)
+    if not check_number(number=receiver):
+        for char in message:
+            if char == "\n":
+                hotkey("shift", "enter")
+            else:
+                typewrite(char)
+    findtextbox()
+    press("enter")
+
+
+def sendwhatmsg_to_group_instantly(
+        group_id: str,
+        message: str,
+        wait_time: int = 15,
+        tab_close: bool = False,
+        close_time: int = 3,
+) -> None:
+    """Send WhatsApp Message to a Group Instantly"""
+
+    current_time = time.localtime()
+    time.sleep(4)
+    core.send_message(message=message, receiver=group_id, wait_time=wait_time)
+    log.log_message(_time=current_time, receiver=group_id, message=message)
+    if tab_close:
+        core.close_tab(wait_time=close_time)
+
+message = 'hola prueba'
+roup_id = 'Operraros😈🤙🏻⚡'
+
+
+receiver = 'Operraros😈🤙🏻⚡'
+_web(receiver=receiver, message=message)
+
+core.send_message(message=message, receiver=group_id, wait_time=wait_time)
+
+
+https://web.whatsapp.com/accept?code=group_id=Operraros😈🤙🏻⚡
+https://web.whatsapp.com/accept?code='Operraros😈🤙🏻⚡'
+https://web.whatsapp.com/accept?code=
+
+https://web.whatsapp.com/send?phone=group_id(Operraros😈🤙🏻⚡)&text=quote('mensage/url')
+https://web.whatsapp.com/send?group_id=Operraros😈🤙🏻⚡&text=quote('mensage/url')
+https://web.whatsapp.com/send?text=quote(Operraros😈🤙🏻⚡)
+https://web.whatsapp.com/send?group_id=Operraros😈🤙🏻⚡
+https://web.whatsapp.com/send?group_id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
